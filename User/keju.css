@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../gambar/logo1.jpg);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.deskripsi-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333 ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.deskripsi-container img.gambar {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+}
+
+.deskripsi-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.deskripsi-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #444;
+    color: #fff;
+}
+
+.deskripsi-container p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: left;
+    color: #fff;
+    text-align: left;
+}
+
+.deskripsi-container ol {
+    padding-left: 20px;
+    text-align: left;
+    color: #fff;
+    text-align: left;
+}
+
+.deskripsi-container ol li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.deskripsi-container button {
+    background-color: #0000ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.deskripsi-container button:hover {
+    background-color: #0000ff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

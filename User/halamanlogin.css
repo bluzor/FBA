@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: 100%;
+    background-image: url(../gambar/logo1.jpg);
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+section .hello{
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-container {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: 10rem auto 0; /* membuat konten berada di tengah secara horizontal dan agak ke bawah sejauh 10rem */
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header-lil{
+    justify-content: center;
+    width: 350px;
+    height: 438px;
+}
+
+
+.kotak{
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    width: 400px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 10px;
+}
+.kotak h2{
+    font-size: 18px;
+
+}
+.kotak2{
+    display: flex;
+    justify-content: center;
+}
+.kotak2 p {
+    font-size: larger;
+}
