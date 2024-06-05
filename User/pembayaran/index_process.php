@@ -2,6 +2,9 @@
 session_start();
 include '../../function.php';
 
+if(isset($_SESSION['id_user'])){
+    $user_id = $_SESSION['id_user'];
+
 if (isset($_POST['submit'])) {
     $product_id = $_POST['product_id'];
     $quantity = $_POST['quantity'];
@@ -18,7 +21,8 @@ if (isset($_POST['submit'])) {
     $total_price = $price * $quantity;
 
     // Simpan order ke dalam database
-    $insert_query = "INSERT INTO transaksi (Nama_Pelanggan, Nama_Produk, ID_Produk, Jumlah, Total_Price) Values('$usern','$nama_img','$product_id','$quantity','$price')";
+    $insert_query = "INSERT INTO transaksi (Nama_Pelanggan, Nama_Produk, ID_Produk, Jumlah, Total_Price, id_user) 
+                     Values('$usern','$nama_img','$product_id','$quantity','$total_price','$user_id')";
     if (mysqli_query($mysqli, $insert_query)) {
         // Ambil ID pesanan terakhir yang dimasukkan
         $orderID = mysqli_insert_id($mysqli);
@@ -31,5 +35,8 @@ if (isset($_POST['submit'])) {
     }
 } else {
     echo "No data submitted.";
+    }
+} else{
+    echo "session ID not Found";
 }
 ?>

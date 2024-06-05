@@ -4,7 +4,7 @@ if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
 } else {
     // Jika sesi tidak ditemukan, redirect ke halaman login
-    header("Location: ../login.php");
+    header("Location:  ../index.php");
     exit();
 }
 ?>
@@ -25,7 +25,7 @@ if (isset($_SESSION['username'])) {
                 <li><a href="halamanlogin.php">Beranda</a></li>
                 <li><a href="tentang.php">Tentang</a></li>
                 <li><a href="produk.php">Produk</a></li>
-                <li><a href="../login.php">Login</a></li>
+                <li><a href=" ../index.php">Login</a></li>
                 <li><a href="../register.php">Register</a></li>
                 <li><a href="riwayat.php">Riwayat</a></li>
             </ul>

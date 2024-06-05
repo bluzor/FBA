@@ -14,7 +14,7 @@
                 <li><a href="halamanlogin.php">Beranda</a></li>
                 <li><a href="tentang.php">Tentang</a></li>
                 <li><a href="produk.php">produk</a></li>
-                <li><a href="../login.php">Login</a></li>
+                <li><a href=" ../index.php">Login</a></li>
                 <li><a href="../register.php">register</a></li>
                 <li><a href="pembayaran/Index.php">Pembelian</a></li>
             </ul>

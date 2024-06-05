@@ -9,6 +9,7 @@
 <body>
 <form action="index_process.php" method="post">
     <h2>Order Form</h2>
+    <input type="hidden" name="user_id" value="<?php echo  htmlspecialchars($_SESSION['id_user'])?>">
         <label for="number">Name</label>
         <input type="text" name="name" id="name" placeholder="Massukan Nama Anda" required>
         <label for="product">Product:</label>
